@@ -37,7 +37,6 @@ h2{
 .fa-chevron-down{
   color: $orange;
   padding-top: 7px;
-  padding-left: 7.5px;
 }
 .sign-arrow{
   background: $white;
@@ -60,6 +59,10 @@ width: 100%;
 h2{
 @include sign-in-header();
 margin-bottom: 15px;
+text-align: left;
+}
+p{
+  text-align: left;
 }
 input{
   display: block;
@@ -99,7 +102,7 @@ input{
   .fa-chevron-right{
     color: $orange;
     padding-top: 7px;
-    padding-left: 10px;
+
   }
 }
 }

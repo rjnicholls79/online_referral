@@ -6,7 +6,7 @@
   <input type="input" placeholder="User Name">
   <input type="password" placeholder="Password">
   <p class="lostCredentials">Lost Your Credentials</p>
-  <router-link to="/about"><div class="mx-auto d-block log-arrow"><i class="fas fa-chevron-right"></i></div></router-link>
+  <router-link to="/welcome"><div class="mx-auto d-block log-arrow"><i class="fas fa-chevron-right"></i></div></router-link>
   <router-view/>
 </section>
 </transition>
@@ -22,13 +22,18 @@
         <img alt="logo" src="../assets/Logo_Asset.png" class="mx-auto d-block">
       </section><!-- End logo -->
       <h1 class="text-center mt-2">welcome to our online referral portal</h1>
+      <Button></Button>
     </section><!-- End Container -->
   </div>
 </template>
 
 <script>
+import Button from '@/components/ui/Button.vue'
 export default {
   name: 'LogIn',
+  components: {
+    Button
+  },
   data(){
   return{
     isShow:{
