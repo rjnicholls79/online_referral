@@ -1,20 +1,10 @@
 @import "./universal.scss";
 
-/**************************
-WELCOME PAGE
-**************************/
-.welcome{
-
-text-align: center;
+p{
+  font-family: $bodyFont;
+  font-size: 14px;
+}
 
 button{
   @include button_one()
 }
-
-.main-illustration{
-  margin-top: 100px;
-}
-}
-/**************************
-END WELCOME PAGE
-**************************/
