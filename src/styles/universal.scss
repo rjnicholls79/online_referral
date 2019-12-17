@@ -10,7 +10,6 @@ $blue: #016BA8;
 $white: #ffffff;
 $orange: #FFB715;
 $gradient: linear-gradient(to bottom, #016ba8, #1c74af, #2c7db5, #3a86bc, #468fc2, #5396c7, #5f9ecd, #6aa5d2, #78add7, #85b5dd, #92bde2, #9fc5e8);
-
 /****************************
 END Colors
 *****************************/
@@ -29,8 +28,42 @@ h1{
   letter-spacing: 5px;
 }
 
+h2{
+  font-family: $font;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
 /****************************
 END TYPOGRAPHY
+*****************************/
+
+/****************************
+BUTTONS
+*****************************/
+@mixin button_one(){
+  background: $white;
+  padding: 5px 15px;
+  color: $blue;
+  font-size: 14px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    background: $orange;
+    color: $white;
+    transition: 1s all;
+    box-shadow: none;
+  }
+
+}
+/****************************
+END BUTTONS
 *****************************/
 
 /****************************
@@ -41,12 +74,16 @@ PAGES
   background: $gradient;
   height: 100vh;
   overflow: hidden;
-  color: #ffffff;
+  color: $white;
 }
 
 .home, .welcome{
 @include main_page_styles();
 }
+
+/****************************
+END PAGES
+*****************************/
 
 .main-illustration{
 }
