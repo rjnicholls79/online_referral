@@ -10,6 +10,7 @@ $blue: #016BA8;
 $white: #ffffff;
 $orange: #FFB715;
 $gradient: linear-gradient(to bottom, #016ba8, #1c74af, #2c7db5, #3a86bc, #468fc2, #5396c7, #5f9ecd, #6aa5d2, #78add7, #85b5dd, #92bde2, #9fc5e8);
+
 /****************************
 END Colors
 *****************************/
@@ -28,6 +29,7 @@ h1{
   letter-spacing: 5px;
 }
 
+<<<<<<< HEAD
 h2{
   font-family: $font;
   text-transform: uppercase;
@@ -40,35 +42,10 @@ p{
   font-family: $bodyFont;
   font-size: 14px;
 }
+=======
+>>>>>>> parent of d477bf43... welcome screen
 /****************************
 END TYPOGRAPHY
-*****************************/
-
-/****************************
-BUTTONS
-*****************************/
-@mixin button_one(){
-  background: $white;
-  padding: 5px 15px;
-  color: $blue;
-  font-size: 14px;
-  border-radius: 15px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
-  &:focus{
-    outline: none;
-  }
-  &:hover{
-    background: $orange;
-    color: $white;
-    transition: 1s all;
-    box-shadow: none;
-  }
-
-}
-/****************************
-END BUTTONS
 *****************************/
 
 /****************************
@@ -79,16 +56,12 @@ PAGES
   background: $gradient;
   height: 100vh;
   overflow: hidden;
-  color: $white;
+  color: #ffffff;
 }
 
 .home, .welcome{
 @include main_page_styles();
 }
-
-/****************************
-END PAGES
-*****************************/
 
 .main-illustration{
 }

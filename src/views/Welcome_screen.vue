@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <main class="welcome">
   <Nav></Nav>
   <section class="main-illustration container">
@@ -8,16 +9,28 @@
     <Button>New Lead</Button>
   </section><!-- End Main Illustration -->
 </main>
+=======
+  <main class="welcome">
+    <section class="main-illustration">
+      <img alt="House" src="../assets/Img_Asset.png" class="mx-auto d-block">
+    </section><!-- End Main Illustration -->
+  </main>
+>>>>>>> parent of d477bf43... welcome screen
 </template>
 
 <script>
 // @ is an alias to /src
+<<<<<<< HEAD
 import Button from '@/components/ui/Button.vue'
 import Nav from '@/components/Nav.vue'
+=======
+
+>>>>>>> parent of d477bf43... welcome screen
 
 export default {
   name: 'welcome',
   components: {
+<<<<<<< HEAD
     Nav,
     Button,
   },
@@ -26,10 +39,9 @@ export default {
       name: "Forename",
     }
   },
+=======
+
+  }
+>>>>>>> parent of d477bf43... welcome screen
 }
 </script>
-
-<style lang="scss">
-@import "../styles/lead_pages.scss";
-@import "../styles/navigation.scss";
-</style>
